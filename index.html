@@ -2,72 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clown Tears Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clown Tears Mockup</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #222;
+      box-sizing: border-box;
     }
-    header {
-      background-color: #111;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 2rem;
-      letter-spacing: 2px;
-    }
-    main {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
-      gap: 20px;
-    }
-    .gallery img {
+    html, body {
+      height: 100%;
       width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-      cursor: pointer;
+      background-color: black;
     }
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      main {
-        margin: 1rem;
-      }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Clown Tears Studios</h1>
-  </header>
-  <main>
-    <div class="gallery">
-      <img src="images/photo1.jpg" alt="Photo 1" />
-      <img src="images/photo2.jpg" alt="Photo 2" />
-      <img src="images/photo3.jpg" alt="Photo 3" />
-      <img src="images/photo4.jpg" alt="Photo 4" />
-      <!-- Add more images as you want -->
-    </div>
-  </main>
+  <img src="images/photo1.jpg" alt="Mockup" />
 </body>
 </html>
