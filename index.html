@@ -1,44 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>Clown Tears Mockup</title>
-<style>
-  :root { --vh: 1vh; }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%;background:#000}
-  .cover {
-    position:fixed;
-    inset:0;
-    width:100%;
-    height:calc(var(--vh,1vh) * 100);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
-  }
-  .cover img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    -webkit-user-drag: none;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clown Tears Studios</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: black;
+        }
+
+        .fullscreen-image {
+            background: url('images/photo1.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .fullscreen-image {
+                background-position: center top;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="cover">
-    <img src="images/photo1.jpg" alt="Clown Tears Mockup" />
-  </div>
-
-<script>
-  // fix for mobile browser UI (address bar) so 100vh works on iOS/Android
-  function setVh(){
-    document.documentElement.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px');
-  }
-  setVh();
-  window.addEventListener('resize', setVh);
-</script>
+    <div class="fullscreen-image"></div>
 </body>
 </html>
