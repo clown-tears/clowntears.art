@@ -5,45 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clown Tears Studios</title>
   <style>
-    /* Reset */
-    body, html {
+    html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      background-color: #000; /* fallback background */
+      background: #000;
     }
 
-    /* Container */
-    .wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* Make image cover full screen */
+    .full-image {
+      width: 100%;
       height: 100%;
-      width: 100%;
-    }
-
-    /* Image */
-    .design-img {
-      width: 100%;
-      height: auto;
-      max-width: 1600px; /* keeps it nice on large screens */
+      object-fit: contain; /* keeps proportions */
       display: block;
-    }
-
-    /* Mobile scaling */
-    @media (max-width: 768px) {
-      .design-img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <img src="Untitled.png" alt="Clown Tears Studios Design" class="design-img">
-  </div>
+  <img src="design.png" alt="Clown Tears Studios Design" class="full-image">
 </body>
 </html>
