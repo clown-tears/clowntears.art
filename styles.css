@@ -1,52 +1,257 @@
-/* Base styles */
+
+/* Add font files for League Gothic */
+@font-face {
+  font-family: 'League Gothic';
+  src: url('fonts/league-gothic.woff2') format('woff2'),
+       url('fonts/league-gothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add font files for Bodoni MT */
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('fonts/bodoni-mt.woff2') format('woff2'),
+       url('fonts/bodoni-mt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font-family-league-gothic: 'League Gothic', sans-serif;
+  --font-family-bodoni-mt: 'Bodoni MT', sans-serif;
+  --text-black: rgba(0, 0, 0, 1);
+}
+
+.text-black {
+  color: var(--text-black);
+}
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #fff;
-  color: #000;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid black;
-}
-
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-header .email {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-/* Gallery grid */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem 2rem;
-}
-
-.gallery img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-/* Product cards */
-.product {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-league-gothic);
+  font-weight: normal;
+  font-size: 48px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.vector-4-3 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.vector-5-4 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.divider-6 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1px solid rgba(73, 69, 79, 1);
+  border: none;
+  outline: none;
+}
+
+.node-5 {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding: 16px 0px 16px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 0.9837921018953677%;
 }
 
-.product p {
-  margin-top: 0.5rem;
-  font-weight: bold;
+.vector-3-7 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border: none;
+  outline: none;
+}
+
+.text-8 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-bodoni-mt);
+  font-weight: normal;
+  font-size: 128px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.node-9 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.clau-tia99-1-10 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.clau-tia9-10-11 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.clau-tia7-1-12 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.clau-tia7-2-13 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.clau-tia7-3-14 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.frame-1-15 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.img_0806-1-16 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.img_0597-1-17 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.untitled-3-1-18 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.untitled-6-1-19 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.untitled-3-2-20 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.untitled-6-2-21 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.91140018_01-1-22 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.91140019_01-1-23 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.macbook-pro-16-1-1 {
+@media (max-width: 1440px) {
+  .macbook-pro-16-1-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .macbook-pro-16-1-1 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: NaN%;
+  background-color: rgba(255, 255, 255, 1);
 }
